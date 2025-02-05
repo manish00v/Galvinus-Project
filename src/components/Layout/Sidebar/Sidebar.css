@@ -1,14 +1,13 @@
 
 /* Sidebar Styling */
 .sidebar {
-	grid-area: sidebar !important;
+	grid-area: sidebar;
 	height: 100%;
 	background-color: #ffffff;
 	color: #333;
 	padding: 10px;
 	border-right: 2px solid #ddd;
 	transition: 0.3s ease-in-out;
-	box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
 	overflow-y: auto;
 	padding-bottom: 20px;
 }
@@ -48,7 +47,6 @@
 	border: none;
 	background: none;
 	font-size: 1rem;
-	font-weight: 600;
 	transition: 0.3s ease-in-out;
 	cursor: pointer;
 	width: 100%;
@@ -60,7 +58,7 @@
 .sidebar ul li button i {
 	width: 22px;
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 1rem;
 	color: #555;
 	transition: 0.3s ease-in-out;
 }
@@ -101,11 +99,11 @@
 
 /* Submenu Links */
 .submenu li button {
-	padding: 12px 35px; /* More indentation */
+	padding: 10px 20px !important; /* More indentation */
 	display: flex;
 	align-items: center;
 	gap: 12px;
-	font-size: 0.95rem;
+	font-size: 0.9rem;
 	color: #555;
 	transition: 0.3s ease-in-out;
 	margin-left: 30px;
@@ -134,7 +132,7 @@
 
 /* Subsubmenu Links */
 .subsubmenu li a {
-	padding: 10px 45px; /* More indentation */
+	padding: 10px 20px !important; /* More indentation */
 	display: flex;
 	align-items: center;
 	gap: 12px;
