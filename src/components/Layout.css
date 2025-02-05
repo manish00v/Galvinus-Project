@@ -1,0 +1,9 @@
+
+.main-container {
+	grid-area: contentarea;
+	display: grid;
+	grid-template-rows: 60px 1fr;
+	grid-template-areas: 
+		"content-area-navbar"
+		"content";
+}

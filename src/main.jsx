@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.jsx";
+import TipsProvider from "./contexts/TipsContext";
+import TipsPageHeaderProvider from "./contexts/TipsPageHeaderContext";
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
 	<StrictMode>
-		<App />
+		<TipsProvider>
+			<TipsPageHeaderProvider>
+				<App />
+			</TipsPageHeaderProvider>
+		</TipsProvider>
 	</StrictMode>,
 );

@@ -1,0 +1,33 @@
+
+import React from "react";
+import "./Navbar.css";
+import galvinusLogo from "../../../assets/galvinus_logo.jpeg"
+import { Link } from "react-router-dom";
+
+const Navbar = () => {
+	return (
+		<nav>
+			{/* Logo Section */}
+			<div className="logo-container">
+				<img src={galvinusLogo} alt="galvinus-logo" />
+				<span className="logo-text">Galvinus</span>
+			</div>
+
+			{/* Search Bar */}
+			<div className="search-box">
+				<input type="text" className="input-search" placeholder="Type to Search..." />
+				<button className="btn-search"><i className="fas fa-search"></i></button>
+			</div>
+
+			{/* Navigation Icons */}
+			<div className="nav-icons">
+				<Link to="/" title="Teams"><i className="fas fa-users icon-team"></i></Link>
+				<Link to="/" title="Notifications"><i className="fa-solid fa-bell"></i></Link>
+				<Link to="/" title="Settings"><i className="fas fa-gear icon-setting"></i></Link>
+				<Link to="/" title="Your Profile"><i className="fas fa-user-circle icon-profile"></i></Link>
+			</div>
+		</nav>
+	);
+}
+
+export default Navbar;

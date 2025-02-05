@@ -1,15 +1,21 @@
 
-import React from "react";
+import React, { useContext } from "react";
+import { TipsContext } from "../../contexts/TipsContext";
+import "./Tips.css";
 
-const Tips = (props) => {
+const Tips = () => {
+	const { tips } = useContext(TipsContext);
+	
 	return (
-		<div className="tips-container">
-			<div className="tip">
-				<span className="tip-icon">
-					<i class="fa-solid fa-lightbulb"></i>
-				</span>
-
-				<p className="tip-text">{props.tip}</p>
+		<div className="content-container">
+			<div className="tips-container">
+				<div className="tip">
+					<span className="tip-icon">
+						<i className="fa-solid fa-lightbulb"></i>
+						Tips:
+					</span>
+					<p className="tip-text">{tips}</p>
+				</div>
 			</div>
 		</div>
 	);

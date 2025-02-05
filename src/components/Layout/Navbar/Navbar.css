@@ -1,20 +1,11 @@
-/* General Reset and Typography */
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Arial", sans-serif;
-}
-
-/* Header Styling */
-header {
-	background-color: #ffffff;
-	border-bottom: 2px solid #ddd;
-	padding: 1rem 2rem;
-}
 
 /* Navbar Styling */
 nav {
+	background-color: #fff;
+	border-bottom: 2px solid #ddd;
+	padding: 10px 20px;
+	width: 100%;
+	grid-area: navbar;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -43,11 +34,11 @@ nav {
 /* Search Bar */
 .search-box {
 	position: relative;
-	flex: 1;
 	display: flex;
+	flex: 1;
 	align-items: center;
 	justify-content: center;
-	max-width: 300px;
+	max-width: 30rem;
 	margin: auto;
 }
 
@@ -95,7 +86,7 @@ nav {
 .nav-icons a {
 	color: #444;
 	font-size: 1.5rem;
-	transition: color 0.3s, transform 0.2s;
+	transition: all 0.3s ease-in-out;
 }
 
 .nav-icons a:hover {

@@ -3,9 +3,5 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Arial", sans-serif;
-}
-
-html {
-	font-size: 10px;
+	font-family: 'Lato', Arial, Helvetica, sans-serif;		/* Default Font Family */
 }
