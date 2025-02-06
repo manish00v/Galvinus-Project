@@ -20,7 +20,7 @@ const TipsPageHeader = () => {
 			</Link>
 
 			<Link to={displayUrl} className="icon-button">
-				<i className="fa-solid fa-display"></i>
+				<i className="fa-solid fa-tv"></i>
 				{displayBtn}
 			</Link>
 		</div>

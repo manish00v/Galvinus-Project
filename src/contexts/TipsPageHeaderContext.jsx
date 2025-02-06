@@ -13,7 +13,7 @@ const TipsPageHeaderProvider = ({ children }) => {
 
 	return (
 		<TipsPageHeaderContext.Provider value={
-			{createBtn, setCreateBtn, editBtn, setEditBtn, displayBtn, setDisplayBtn, createUrl, setCreateUrl, editUrl, setEditUrl, displayUrl, setDisplayUrl }
+			{createBtn, setCreateBtn, editBtn, setEditBtn, displayBtn, setDisplayBtn, createUrl, setCreateUrl, editUrl, setEditUrl, displayUrl, setDisplayUrl}
 		}>
 			{ children }
 		</TipsPageHeaderContext.Provider>

@@ -23,6 +23,67 @@ import InvoicePage from "./pages/Billing&Invoicing/Invoice/InvoicePage";
 import PaymentPage from "./pages/Billing&Invoicing/Payment/PaymentPage";
 import TaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfiguration/TaxConfigurationPage";
 
+import CreateSalesOrderPage from "./pages/SalesManagement/SalesOrder/CreateSalesOrder/CreateSalesOrderPage";
+import EditSalesOrderPage from "./pages/SalesManagement/SalesOrder/EditSalesOrder/EditSalesOrderPage";
+import DisplaySalesOrderPage from "./pages/SalesManagement/SalesOrder/DisplaySalesOrder/DisplaySalesOrderPage";
+import CreateLineItemsPage from "./pages/SalesManagement/LineItems/CreateLineItems/CreateLineItemsPage";
+import EditLineItemsPage from "./pages/SalesManagement/LineItems/EditLineItems/EditLineItemsPage";
+import DisplayLineItemsPage from "./pages/SalesManagement/LineItems/DisplayLineItems/DisplayLineItemsPage";
+import CreateCustomerPage from "./pages/SalesManagement/Customer/CreateCustomer/CreateCustomerPage";
+import EditCustomerPage from "./pages/SalesManagement/Customer/EditCustomer/EditCustomerPage";
+import DisplayCustomerPage from "./pages/SalesManagement/Customer/DisplayCustomer/DisplayCustomerPage";
+import CreateSalesPersonPage from "./pages/SalesManagement/SalesPerson/CreateSalesPerson/CreateSalesPersonPage";
+import EditSalesPersonPage from "./pages/SalesManagement/SalesPerson/EditSalesPerson/EditSalesPersonPage";
+import DisplaySalesPersonPage from "./pages/SalesManagement/SalesPerson/DisplaySalesPerson/DisplaySalesPersonPage";
+import CreatePricingRulesPage from "./pages/Pricing&Discount/PricingRules/CreatePricingRules/CreatePricingRulesPage";
+import EditPricingRulesPage from "./pages/Pricing&Discount/PricingRules/EditPricingRules/EditPricingRulesPage";
+import DisplayPricingRulesPage from "./pages/Pricing&Discount/PricingRules/DisplayPricingRules/DisplayPricingRulesPage";
+import CreateDiscountRulesPage from "./pages/Pricing&Discount/DiscountRules/CreateDiscountRules/CreateDiscountRulesPage";
+import EditDiscountRulesPage from "./pages/Pricing&Discount/DiscountRules/EditDiscountRules/EditDiscountRulesPage";
+import DisplayDiscountRulesPage from "./pages/Pricing&Discount/DiscountRules/DisplayDiscountRules/DisplayDiscountRulesPage";
+import CreateProductPage from "./pages/Pricing&Discount/Product/CreateProduct/CreateProductPage";
+import EditProductPage from "./pages/Pricing&Discount/Product/EditProduct/EditProductPage";
+import DisplayProductPage from "./pages/Pricing&Discount/Product/DisplayProduct/DisplayProductPage";
+import CreateDiscountPage from "./pages/Pricing&Discount/Discount/CreateDiscount/CreateDiscountPage";
+import EditDiscountPage from "./pages/Pricing&Discount/Discount/EditDiscount/EditDiscountPage";
+import DisplayDiscountPage from "./pages/Pricing&Discount/Discount/DisplayDiscount/DisplayDiscountPage";
+import CreateInventoryPage from "./pages/InventoryManagement/Inventory/CreateInventory/CreateInventoryPage";
+import EditInventoryPage from "./pages/InventoryManagement/Inventory/EditInventory/EditInventoryPage";
+import DisplayInventoryPage from "./pages/InventoryManagement/Inventory/DisplayInventory/DisplayInventoryPage";
+import CreateWarehousePage from "./pages/InventoryManagement/Warehouse/CreateWarehouse/CreateWarehousePage";
+import EditWarehousePage from "./pages/InventoryManagement/Warehouse/EditWarehouse/EditWarehousePage";
+import DisplayWarehousePage from "./pages/InventoryManagement/Warehouse/DisplayWarehouse/DisplayWarehousePage";
+import CreateProductMovementPage from "./pages/InventoryManagement/ProductMovement/CreateProductMovement/CreateProductMovementPage";
+import EditProductMovementPage from "./pages/InventoryManagement/ProductMovement/EditProductMovement/EditProductMovementPage";
+import DisplayProductMovementPage from "./pages/InventoryManagement/ProductMovement/DisplayProductMovement/DisplayProductMovementPage";
+import CreateSupplierPage from "./pages/InventoryManagement/Supplier/CreateSupplier/CreateSupplierPage";
+import EditSupplierPage from "./pages/InventoryManagement/Supplier/EditSupplier/EditSupllierPage";
+import DisplaySupplierPage from "./pages/InventoryManagement/Supplier/DisplaySupplier/DisplaySupplierPage";
+import CreateShipmentPage from "./pages/Logistics&Delivery/Shipment/CreateShipment/CreateShipmentPage";
+import EditShipmentPage from "./pages/Logistics&Delivery/Shipment/EditShipment/EditShipmentPage";
+import DisplayShipmentPage from "./pages/Logistics&Delivery/Shipment/DisplayShipment/DisplayShipmentPage";
+import CreateDeliveryRoutePage from "./pages/Logistics&Delivery/DeliveryRoute/CreateDeliveryRoute/CreateDeliveryRoutePage";
+import EditDeliveryRoutePage from "./pages/Logistics&Delivery/DeliveryRoute/EditDeliveryRoute/EditDeliveryRoutePage";
+import DisplayDeliveryRoutePage from "./pages/Logistics&Delivery/DeliveryRoute/DisplayDeliveryRoute/DisplayDeliveryRoutePage";
+import CreateCarrierPage from "./pages/Logistics&Delivery/Carrier/CreateCarrier/CreateCarrierPage";
+import EditCarrierPage from "./pages/Logistics&Delivery/Carrier/EditCarrier/EditCarrierPage";
+import DisplayCarrierPage from "./pages/Logistics&Delivery/Carrier/DisplayCarrier/DisplayCarrierPage";
+import CreateDeliveryVehiclePage from "./pages/Logistics&Delivery/DeliveryVehicle/CreateDeliveryVehicle/CreateDeliveryVehiclePage";
+import EditDeliveryVehiclePage from "./pages/Logistics&Delivery/DeliveryVehicle/EditDeliveryVehicle/EditDeliveryVehiclePage";
+import DisplayDeliveryVehiclePage from "./pages/Logistics&Delivery/DeliveryVehicle/DisplayDeliveryVehicle/DisplayDeliveryVehiclePage";
+import CreateInvoicePage from "./pages/Billing&Invoicing/Invoice/CreateInvoice/CreateInvoicePage";
+import EditInvoicePage from "./pages/Billing&Invoicing/Invoice/EditInvoice/EditInvoicePage";
+import DisplayInvoicePage from "./pages/Billing&Invoicing/Invoice/DisplayInvoice/DisplayInvoicePage";
+import CreatePaymentPage from "./pages/Billing&Invoicing/Payment/CreatePayment/CreatePaymentPage";
+import EditPaymentPage from "./pages/Billing&Invoicing/Payment/EditPayment/EditPaymentPage";
+import DisplayPaymentPage from "./pages/Billing&Invoicing/Payment/DisplayPayment/DisplayPaymentPage";
+import CreateTaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfiguration/CreateTaxConfiguration/CreateTaxConfigurationPage";
+import EditTaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfiguration/EditTaxConfiguration/EditTaxConfigurationPage";
+import DisplayTaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfiguration/DisplayTaxConfiguration/DisplayTaxConfigurationPage";
+import CreateCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/CreateCurrencyExchangeRate/CreateCurrencyExchangeRatePage";
+import EditCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/EditCurrencyExchangeRate/EditCurrencyExchangeRatePage";
+import DisplayCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/DisplayCurrencyExchangeRate/DisplayCurrencyExchangeRatePage";
+
 function App() {
 	return (
 		<BrowserRouter>
@@ -48,6 +109,67 @@ function App() {
 					<Route path="/invoice" element={<InvoicePage />} />
 					<Route path="/payment" element={<PaymentPage />} />
 					<Route path="/taxconfiguration" element={<TaxConfigurationPage />} />
+
+					<Route path="/createsalesorder" element={<CreateSalesOrderPage />} />
+					<Route path="/editsalesorder" element={<EditSalesOrderPage />} />
+					<Route path="/displaysalesorder" element={<DisplaySalesOrderPage />} />
+					<Route path="/createlineitems" element={<CreateLineItemsPage />} />
+					<Route path="/editlineitems" element={<EditLineItemsPage />} />
+					<Route path="/displaylineitems" element={<DisplayLineItemsPage />} />
+					<Route path="/createcustomer" element={<CreateCustomerPage />} />
+					<Route path="/editcustomer" element={<EditCustomerPage />} />
+					<Route path="/displaycustomer" element={<DisplayCustomerPage />} />
+					<Route path="/createsalesperson" element={<CreateSalesPersonPage />} />
+					<Route path="/editsalesperson" element={<EditSalesPersonPage />} />
+					<Route path="/displaysalesperson" element={<DisplaySalesPersonPage />} />
+					<Route path="/createpricingrules" element={<CreatePricingRulesPage />} />
+					<Route path="/editpricingrules" element={<EditPricingRulesPage />} />
+					<Route path="/displaypricingrules" element={<DisplayPricingRulesPage />} />
+					<Route path="/creatediscountrules" element={<CreateDiscountRulesPage />} />
+					<Route path="/editdiscountrules" element={<EditDiscountRulesPage />} />
+					<Route path="/displaydiscountrules" element={<DisplayDiscountRulesPage />} />
+					<Route path="/createproduct" element={<CreateProductPage />} />
+					<Route path="/editproduct" element={<EditProductPage />} />
+					<Route path="/displayproduct" element={<DisplayProductPage />} />
+					<Route path="/creatediscount" element={<CreateDiscountPage />} />
+					<Route path="/editdiscount" element={<EditDiscountPage />} />
+					<Route path="/displaydiscount" element={<DisplayDiscountPage />} />
+					<Route path="/createinventory" element={<CreateInventoryPage />} />
+					<Route path="/editinventory" element={<EditInventoryPage />} />
+					<Route path="/displayinventory" element={<DisplayInventoryPage />} />
+					<Route path="/createwarehouse" element={<CreateWarehousePage />} />
+					<Route path="/editwarehouse" element={<EditWarehousePage />} />
+					<Route path="/displaywarehouse" element={<DisplayWarehousePage />} />
+					<Route path="/createproductmovement" element={<CreateProductMovementPage />} />
+					<Route path="/editproductmovement" element={<EditProductMovementPage />} />
+					<Route path="/displayproductmovement" element={<DisplayProductMovementPage />} />
+					<Route path="/createsupplier" element={<CreateSupplierPage />} />
+					<Route path="/editsupplier" element={<EditSupplierPage />} />
+					<Route path="/displaysupplier" element={<DisplaySupplierPage />} />
+					<Route path="/createshipment" element={<CreateShipmentPage />} />
+					<Route path="/editshipment" element={<EditShipmentPage />} />
+					<Route path="/displayshipment" element={<DisplayShipmentPage />} />
+					<Route path="/createdeliveryroute" element={<CreateDeliveryRoutePage />} />
+					<Route path="/editdeliveryroute" element={<EditDeliveryRoutePage />} />
+					<Route path="/displaydeliveryroute" element={<DisplayDeliveryRoutePage />} />
+					<Route path="/createcarrier" element={<CreateCarrierPage />} />
+					<Route path="/editcarrier" element={<EditCarrierPage />} />
+					<Route path="/displaycarrier" element={<DisplayCarrierPage />} />
+					<Route path="/createdeliveryvehicle" element={<CreateDeliveryVehiclePage />} />
+					<Route path="/editdeliveryvehicle" element={<EditDeliveryVehiclePage />} />
+					<Route path="/displaydeliveryvehicle" element={<DisplayDeliveryVehiclePage />} />
+					<Route path="/createinvoice" element={<CreateInvoicePage />} />
+					<Route path="/editinvoice" element={<EditInvoicePage />} />
+					<Route path="/displayinvoice" element={<DisplayInvoicePage />} />
+					<Route path="/createpayment" element={<CreatePaymentPage />} />
+					<Route path="/editpayment" element={<EditPaymentPage />} />
+					<Route path="/displaypayment" element={<DisplayPaymentPage />} />
+					<Route path="/createtaxconfiguration" element={<CreateTaxConfigurationPage />} />
+					<Route path="/edittaxconfiguration" element={<EditTaxConfigurationPage />} />
+					<Route path="/displaytaxconfiguration" element={<DisplayTaxConfigurationPage />} />
+					<Route path="/createcurrencyexchangerate" element={<CreateCurrencyExchangeRatePage />} />
+					<Route path="/editcurrencyexchangerate" element={<EditCurrencyExchangeRatePage />} />
+					<Route path="/displaycurrencyexchangerate" element={<DisplayCurrencyExchangeRatePage />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

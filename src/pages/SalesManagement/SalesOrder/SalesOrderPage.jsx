@@ -8,12 +8,12 @@ const SalesOrderPage = () => {
 	const { setCreateBtn, setEditBtn, setDisplayBtn, setCreateUrl, setEditUrl, setDisplayUrl } = useContext(TipsPageHeaderContext);
 
 	useEffect(() => {
-		setCreateBtn("Create Order");
-		setEditBtn("Edit Order");
-		setDisplayBtn("Display Order");
-		setCreateUrl("/createorder");
-		setEditUrl("/editorder");
-		setDisplayUrl("/displayorder");
+		setCreateBtn("Create Sales Order");
+		setEditBtn("Edit Sales Order");
+		setDisplayBtn("Display Sales Order");
+		setCreateUrl("/createsalesorder");
+		setEditUrl("/editsalesorder");
+		setDisplayUrl("/displaysalesorder");
 	}, []);
 
 	return (
