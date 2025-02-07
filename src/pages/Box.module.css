@@ -1,0 +1,61 @@
+/* Main content styling */
+/* Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+/* Form Container */
+.formContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    
+}
+
+/* Box Styling */
+.box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    min-width: 280px;
+   
+    
+    
+}
+
+/* Box Headings */
+.box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    
+}
+
+/* Form Labels */
+.box form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Form Inputs */
+.box form input, 
+.box form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+ 

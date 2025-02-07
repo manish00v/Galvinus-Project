@@ -84,6 +84,16 @@ import CreateCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyEx
 import EditCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/EditCurrencyExchangeRate/EditCurrencyExchangeRatePage";
 import DisplayCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/DisplayCurrencyExchangeRate/DisplayCurrencyExchangeRatePage";
 
+import EditSalesOrderForm from "./pages/SalesManagement/SalesOrder/EditSalesOrder/EditSalesOrderForm";
+import DisplaySalesOrderForm from "./pages/SalesManagement/SalesOrder/DisplaySalesOrder/DisplaySalesOrderForm";
+import EditSalesPersonForm from "./pages/SalesManagement/SalesPerson/EditSalesPerson/EditSalesPersonForm";
+import DisplaySalesPersonForm from "./pages/SalesManagement/SalesPerson/DisplaySalesPerson/DisplaySalesPersonForm";
+import DisplayLineItemsForm from "./pages/SalesManagement/LineItems/DisplayLineItems/DisplayLineItemsForm";
+import EditLineItemsForm from "./pages/SalesManagement/LineItems/EditLineItems/EditLineItemsForm";
+import EditCustomerForm from "./pages/SalesManagement/Customer/EditCustomer/EditCustomerForm";
+import DisplayCustomerForm from "./pages/SalesManagement/Customer/DisplayCustomer/DisplayCustomerForm";
+import EditCarrierForm from "./pages/Logistics&Delivery/Carrier/EditCarrier/EditCarrierForm";
+import DisplayCarrierForm from "./pages/Logistics&Delivery/Carrier/DisplayCarrier/DisplayCarrierForm";
 function App() {
 	return (
 		<BrowserRouter>
@@ -170,6 +180,20 @@ function App() {
 					<Route path="/createcurrencyexchangerate" element={<CreateCurrencyExchangeRatePage />} />
 					<Route path="/editcurrencyexchangerate" element={<EditCurrencyExchangeRatePage />} />
 					<Route path="/displaycurrencyexchangerate" element={<DisplayCurrencyExchangeRatePage />} />
+					
+					<Route path="/editsalesorderform" element={<EditSalesOrderForm />} />
+					<Route path="/displaysalesorderform" element={<DisplaySalesOrderForm />} />
+					<Route path="/editsalespersonform" element={<EditSalesPersonForm/>}/>
+					<Route path="/displaysalespersonform" element={<DisplaySalesPersonForm/>}/>
+					<Route path="/displaylineitemsform" element={<DisplayLineItemsForm/>}/>
+					<Route path="/editlineitemsform" element={<EditLineItemsForm/>}/>
+					<Route path="/displaycustomerform" element={<DisplayCustomerForm/>}/>
+					<Route path="/editcustomerform" element={<EditCustomerForm/>}/>
+					<Route path="/displaycarrierform" element={<DisplayCarrierForm/>}/>
+					<Route path="/editcarrierform" element={<EditCarrierForm/>}/>
+					
+				
+				
 				</Route>
 			</Routes>
 		</BrowserRouter>
