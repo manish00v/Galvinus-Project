@@ -1,15 +1,24 @@
-import { useState } from "react";
+import { useState, useContext, useEffect } from "react";
+import { FormPageHeaderContext } from "../../../../../src/contexts/FormPageHeaderContext"
+import FormPageHeader from "../../../../components/Layout/FormPageHeader/FormPageHeader"
 
 import Box from "../../../Box.module.css"
 
 
 
 export default function EditSalesOrderForm(){
-  const [showCreateAlert, setShowCreateAlert] = useState(false);
-  const [showSaveAlert, setShowSaveAlert] = useState(false);
+  const { setBtn, setUrl, setGoBackUrl } = useContext(FormPageHeaderContext);
+ 
+  useEffect(() => {
+      setBtn("Save");
+      setUrl("/salesorder");          // Edit this
+      setGoBackUrl("/salesorder");
+      
+  }, []);
 
   return (
     <>
+    <FormPageHeader />
       <main className={Box.content}>
       <h2> Edit Sales Order</h2>
         <div className={Box.formContainer}>

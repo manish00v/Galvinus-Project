@@ -9,11 +9,11 @@ export default function DisplaySalesOrderKey() {
     <div className={Key.box} id="box1">
       <h2>Display Sales Order - Mandatory Details</h2>
       <form action="/submit-form" method="POST">
-        <label htmlFor="order-line-itemid">Sales Order ID (Primary Key)</label>
+        <label htmlFor="sales-order-id">Sales Order ID (Primary Key)</label>
         <input
           type="text"
-          id="order-line-item-id"
-          name="order_line_item_id"
+          id="sales-order-id"
+          name="sales_order_id"
           required=""
         />
 

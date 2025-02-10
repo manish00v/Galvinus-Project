@@ -29,6 +29,13 @@ const FormPageHeader = () => {
 					{btn}
 				</Link>
 			)}
+			
+			{btn.includes("Save") && (
+                <Link to={url} className="icon-button">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    {btn}
+                </Link>
+            )}
 
 			{!btn.includes("Display") && (
 				<Link to={goBackUrl} className="icon-button">

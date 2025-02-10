@@ -2,21 +2,22 @@
 import React, { useContext, useEffect } from "react";
 import { FormPageHeaderContext } from "../../../../contexts/FormPageHeaderContext";
 import FormPageHeader from "../../../../components/Layout/FormPageHeader/FormPageHeader";
-
-const EditSupplierPage = () => {
+import EditReturnOrderKey from "./EditReturnOrderKey";
+const EditReturnOrderPage = () => {
 	const { setBtn, setUrl, setGoBackUrl } = useContext(FormPageHeaderContext);
 
 	useEffect(() => {
 		setBtn("Edit");
-		setUrl("/");					// Edit this
-		setGoBackUrl("/supplier");
+		setUrl("/editreturnorderform");
+		setGoBackUrl("/returnorder");
 	}, []);
 
 	return (
 		<>
 			<FormPageHeader />
+			<EditReturnOrderKey />
 		</>
 	);
 }
 
-export default EditSupplierPage;
+export default EditReturnOrderPage;

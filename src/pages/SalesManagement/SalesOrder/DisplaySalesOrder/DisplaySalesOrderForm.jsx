@@ -1,9 +1,20 @@
-import React from "react";
+// import React from "react";
 import Box from "../../../Box.module.css"
+import React, { useContext, useEffect } from "react";
+import { FormPageHeaderContext } from "../../../../contexts/FormPageHeaderContext";
+import FormPageHeader from "../../../../components/Layout/FormPageHeader/FormPageHeader";
+ 
+  
+ 
+
 export default function DisplaySalesOrderForm() {
+  const { setGoBackUrl } = useContext(FormPageHeaderContext);
+  useEffect(() => {
+    setGoBackUrl("/salesorder");
+  }, []);
   return (
     <>
-      
+      <FormPageHeader />
         
      
        <main className={Box.content}>

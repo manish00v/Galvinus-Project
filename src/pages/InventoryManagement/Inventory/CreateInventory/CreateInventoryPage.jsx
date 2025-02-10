@@ -2,6 +2,7 @@
 import React, { useContext, useEffect } from "react";
 import { FormPageHeaderContext } from "../../../../contexts/FormPageHeaderContext";
 import FormPageHeader from "../../../../components/Layout/FormPageHeader/FormPageHeader";
+import CreateInventoryForm from "./CreateInventoryForm";
 
 const CreateInventoryPage = () => {
 	const { setBtn, setUrl, setGoBackUrl } = useContext(FormPageHeaderContext);
@@ -15,6 +16,7 @@ const CreateInventoryPage = () => {
 	return (
 		<>
 			<FormPageHeader />
+			<CreateInventoryForm />
 		</>
 	);
 }

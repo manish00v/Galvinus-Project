@@ -22,6 +22,8 @@ import CurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchange
 import InvoicePage from "./pages/Billing&Invoicing/Invoice/InvoicePage";
 import PaymentPage from "./pages/Billing&Invoicing/Payment/PaymentPage";
 import TaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfiguration/TaxConfigurationPage";
+import ReturnLineItemsPage from "./pages/Returns/ReturnLineItems/ReturnLineItemsPage";
+import ReturnOrderPage from "./pages/Returns/ReturnOrder/ReturnOrderPage";
 
 import CreateSalesOrderPage from "./pages/SalesManagement/SalesOrder/CreateSalesOrder/CreateSalesOrderPage";
 import EditSalesOrderPage from "./pages/SalesManagement/SalesOrder/EditSalesOrder/EditSalesOrderPage";
@@ -57,7 +59,7 @@ import CreateProductMovementPage from "./pages/InventoryManagement/ProductMoveme
 import EditProductMovementPage from "./pages/InventoryManagement/ProductMovement/EditProductMovement/EditProductMovementPage";
 import DisplayProductMovementPage from "./pages/InventoryManagement/ProductMovement/DisplayProductMovement/DisplayProductMovementPage";
 import CreateSupplierPage from "./pages/InventoryManagement/Supplier/CreateSupplier/CreateSupplierPage";
-import EditSupplierPage from "./pages/InventoryManagement/Supplier/EditSupplier/EditSupllierPage";
+import EditSupplierPage from "./pages/InventoryManagement/Supplier/EditSupplier/EditSupplierPage";
 import DisplaySupplierPage from "./pages/InventoryManagement/Supplier/DisplaySupplier/DisplaySupplierPage";
 import CreateShipmentPage from "./pages/Logistics&Delivery/Shipment/CreateShipment/CreateShipmentPage";
 import EditShipmentPage from "./pages/Logistics&Delivery/Shipment/EditShipment/EditShipmentPage";
@@ -83,6 +85,12 @@ import DisplayTaxConfigurationPage from "./pages/Billing&Invoicing/TaxConfigurat
 import CreateCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/CreateCurrencyExchangeRate/CreateCurrencyExchangeRatePage";
 import EditCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/EditCurrencyExchangeRate/EditCurrencyExchangeRatePage";
 import DisplayCurrencyExchangeRatePage from "./pages/Billing&Invoicing/CurrencyExchangeRate/DisplayCurrencyExchangeRate/DisplayCurrencyExchangeRatePage";
+import CreateReturnLineItemsPage from "./pages/Returns/ReturnLineItems/CreateReturnLineItems/CreateReturnLineItemsPage";
+import EditReturnLineItemsPage from "./pages/Returns/ReturnLineItems/EditReturnLineItems/EditReturnLineItemsPage";
+import DisplayReturnLineItemsPage from "./pages/Returns/ReturnLineItems/DisplayReturnLineItems/DisplayReturnLineItemsPage";
+import CreateReturnOrderPage from "./pages/Returns/ReturnOrder/CreateReturnOrder/CreateReturnOrderPage";
+import EditReturnOrderPage from "./pages/Returns/ReturnOrder/EditReturnOrder/EditReturnOrderPage";
+import DisplayReturnOrderPage from "./pages/Returns/ReturnOrder/DisplayReturnOrder/DisplayReturnOrderPage";
 
 import EditSalesOrderForm from "./pages/SalesManagement/SalesOrder/EditSalesOrder/EditSalesOrderForm";
 import DisplaySalesOrderForm from "./pages/SalesManagement/SalesOrder/DisplaySalesOrder/DisplaySalesOrderForm";
@@ -94,6 +102,41 @@ import EditCustomerForm from "./pages/SalesManagement/Customer/EditCustomer/Edit
 import DisplayCustomerForm from "./pages/SalesManagement/Customer/DisplayCustomer/DisplayCustomerForm";
 import EditCarrierForm from "./pages/Logistics&Delivery/Carrier/EditCarrier/EditCarrierForm";
 import DisplayCarrierForm from "./pages/Logistics&Delivery/Carrier/DisplayCarrier/DisplayCarrierForm";
+import EditDeliveryRouteForm from "./pages/Logistics&Delivery/DeliveryRoute/EditDeliveryRoute/EditDeliveryRouteForm";
+import DisplayDeliveryRouteForm from "./pages/Logistics&Delivery/DeliveryRoute/DisplayDeliveryRoute/DisplayDeliveryRouteForm";
+import EditDeliveryVehicleForm from "./pages/Logistics&Delivery/DeliveryVehicle/EditDeliveryVehicle/EditDeliveryVehicleForm";
+import DisplayDeliveryVehicleForm from "./pages/Logistics&Delivery/DeliveryVehicle/DisplayDeliveryVehicle/DisplayDeliveryVehicleForm";
+import EditShipmentForm from "./pages/Logistics&Delivery/Shipment/EditShipment/EditShipmentForm";
+import DisplayShipmentForm from "./pages/Logistics&Delivery/Shipment/DisplayShipment/DisplayShipmentForm";
+import EditDiscountForm from "./pages/Pricing&Discount/Discount/EditDiscount/EditDiscountForm";
+import DisplayDiscountForm from "./pages/Pricing&Discount/Discount/DisplayDiscount/DisplayDiscountForm";
+import EditDiscountRulesForm from "./pages/Pricing&Discount/DiscountRules/EditDiscountRules/EditDiscountRulesForm";
+import DisplayDiscountRulesForm from "./pages/Pricing&Discount/DiscountRules/DisplayDiscountRules/DisplayDiscountRulesForm";
+import EditPricingRulesForm from "./pages/Pricing&Discount/PricingRules/EditPricingRules/EditPricingRulesForm";
+import DisplayPricingRulesForm from "./pages/Pricing&Discount/PricingRules/DisplayPricingRules/DisplayPricingRulesForm";
+import EditProductForm from "./pages/Pricing&Discount/Product/EditProduct/EditProductForm";
+import DisplayProductForm from "./pages/Pricing&Discount/Product/DisplayProduct/DisplayProductForm";
+import EditInventoryForm from "./pages/InventoryManagement/Inventory/EditInventory/EditInventoryForm";
+import DisplayInventoryForm from "./pages/InventoryManagement/Inventory/DisplayInventory/DisplayInventoryForm";
+import EditProductMovementForm from "./pages/InventoryManagement/ProductMovement/EditProductMovement/EditProductMovementForm";
+import DisplayProductMovementForm from "./pages/InventoryManagement/ProductMovement/DisplayProductMovement/DisplayProductMovementForm";
+import EditSupplierForm from "./pages/InventoryManagement/Supplier/EditSupplier/EditSupplierForm";
+import DisplaySupplierForm from "./pages/InventoryManagement/Supplier/DisplaySupplier/DisplaySupplierForm";
+import EditWarehouseForm from "./pages/InventoryManagement/Warehouse/EditWarehouse/EditWarehouseform";
+import DisplayWarehouseForm from "./pages/InventoryManagement/Warehouse/DisplayWarehouse/DisplayWarehouseForm";
+import EditCurrencyExchangeRateForm from "./pages/Billing&Invoicing/CurrencyExchangeRate/EditCurrencyExchangeRate/EditCurrencyExchangeRateForm";
+import DisplayCurrencyExchangeRateForm from "./pages/Billing&Invoicing/CurrencyExchangeRate/DisplayCurrencyExchangeRate/DisplayCurrencyExchangeRateForm";
+import EditInvoiceForm from "./pages/Billing&Invoicing/Invoice/EditInvoice/EditInvoiceForm";
+import DisplayInvoiceForm from "./pages/Billing&Invoicing/Invoice/DisplayInvoice/DisplayInvoiceForm";
+import EditPaymentForm from "./pages/Billing&Invoicing/Payment/EditPayment/EditPaymentForm";
+import DisplayPaymentForm from "./pages/Billing&Invoicing/Payment/DisplayPayment/DisplayPaymentForm";
+import EditTaxConfigurationForm from "./pages/Billing&Invoicing/TaxConfiguration/EditTaxConfiguration/EditTaxConfigurationForm";
+import DisplayTaxConfigurationForm from "./pages/Billing&Invoicing/TaxConfiguration/DisplayTaxConfiguration/DisplayTaxConfigurationForm";
+import EditReturnLineItemsForm from "./pages/Returns/ReturnLineItems/EditReturnLineItems/EditReturnLineItemsForm";
+import DisplayReturnLineItemsForm from "./pages/Returns/ReturnLineItems/DisplayReturnLineItems/DisplayReturnLineItemsForm";
+import EditReturnOrderForm from "./pages/Returns/ReturnOrder/EditReturnOrder/EditReturnOrderForm";
+import DisplayReturnOrderForm from "./pages/Returns/ReturnOrder/DisplayReturnOrder/DisplayReturnOrderForm";
+
 function App() {
 	return (
 		<BrowserRouter>
@@ -119,6 +162,9 @@ function App() {
 					<Route path="/invoice" element={<InvoicePage />} />
 					<Route path="/payment" element={<PaymentPage />} />
 					<Route path="/taxconfiguration" element={<TaxConfigurationPage />} />
+					<Route path="/returnlineitems" element={<ReturnLineItemsPage />} />
+					<Route path="/returnorder" element={<ReturnOrderPage />} />
+					
 
 					<Route path="/createsalesorder" element={<CreateSalesOrderPage />} />
 					<Route path="/editsalesorder" element={<EditSalesOrderPage />} />
@@ -180,7 +226,14 @@ function App() {
 					<Route path="/createcurrencyexchangerate" element={<CreateCurrencyExchangeRatePage />} />
 					<Route path="/editcurrencyexchangerate" element={<EditCurrencyExchangeRatePage />} />
 					<Route path="/displaycurrencyexchangerate" element={<DisplayCurrencyExchangeRatePage />} />
+					<Route path="/createreturnlineitems" element={<CreateReturnLineItemsPage />} />
+					<Route path="/editreturnlineitems" element={<EditReturnLineItemsPage />} />
+					<Route path="/displayreturnlineitems" element={<DisplayReturnLineItemsPage />} />
+					<Route path="/createreturnorder" element={<CreateReturnOrderPage />} />
+					<Route path="/editreturnorder" element={<EditReturnOrderPage />} />
+					<Route path="/displayreturnorder" element={<DisplayReturnOrderPage />} />
 					
+
 					<Route path="/editsalesorderform" element={<EditSalesOrderForm />} />
 					<Route path="/displaysalesorderform" element={<DisplaySalesOrderForm />} />
 					<Route path="/editsalespersonform" element={<EditSalesPersonForm/>}/>
@@ -191,6 +244,40 @@ function App() {
 					<Route path="/editcustomerform" element={<EditCustomerForm/>}/>
 					<Route path="/displaycarrierform" element={<DisplayCarrierForm/>}/>
 					<Route path="/editcarrierform" element={<EditCarrierForm/>}/>
+					<Route path="/displaydeliveryrouteform" element={<DisplayDeliveryRouteForm/>}/>
+					<Route path="/editdeliveryrouteform" element={<EditDeliveryRouteForm/>}/>
+					<Route path="/displaydeliveryvehicleform" element={<DisplayDeliveryVehicleForm/>}/>
+					<Route path="/editdeliveryvehicleform" element={<EditDeliveryVehicleForm/>}/>
+					<Route path="/displayshipmentform" element={<DisplayShipmentForm/>}/>
+					<Route path="/editshipmentform" element={<EditShipmentForm/>}/>
+					<Route path="/displaydiscountform" element={<DisplayDiscountForm/>}/>
+					<Route path="/editdiscountform" element={<EditDiscountForm/>}/>
+					<Route path="/displaydiscountrulesform" element={<DisplayDiscountRulesForm/>}/>
+					<Route path="/editdiscountrulesform" element={<EditDiscountRulesForm/>}/>
+					<Route path="/displaypricingrulesform" element={<DisplayPricingRulesForm/>}/>
+					<Route path="/editpricingrulesform" element={<EditPricingRulesForm/>}/>
+					<Route path="/displayproductform" element={<DisplayProductForm/>}/>
+					<Route path="/editproductform" element={<EditProductForm/>}/>
+					<Route path="/displayinventoryform" element={<DisplayInventoryForm/>}/>
+					<Route path="/editinventoryform" element={<EditInventoryForm/>}/>
+					<Route path="/displayproductmovementform" element={<DisplayProductMovementForm/>}/>
+					<Route path="/editproductmovementform" element={<EditProductMovementForm/>}/>
+					<Route path="/displaysupplierform" element={<DisplaySupplierForm/>}/>
+					<Route path="/editsupplierform" element={<EditSupplierForm/>}/>
+					<Route path="/displaywarehouseform" element={<DisplayWarehouseForm/>}/>
+					<Route path="/editwarehouseform" element={<EditWarehouseForm/>}/>
+					<Route path="/displaycurrencyexchangerateform" element={<DisplayCurrencyExchangeRateForm/>}/>
+					<Route path="/editcurrencyexchangerateform" element={<EditCurrencyExchangeRateForm/>}/>
+					<Route path="/displayinvoiceform" element={<DisplayInvoiceForm/>}/>
+					<Route path="/editinvoiceform" element={<EditInvoiceForm/>}/>
+					<Route path="/displaypaymentform" element={<DisplayPaymentForm/>}/>
+					<Route path="/editpaymentform" element={<EditPaymentForm/>}/>
+					<Route path="/displaytaxconfigurationform" element={<DisplayTaxConfigurationForm/>}/>
+					<Route path="/edittaxconfigurationform" element={<EditTaxConfigurationForm/>}/>
+					<Route path="/displayreturnlineitemsform" element={<DisplayReturnLineItemsForm/>}/>
+					<Route path="/editreturnlineitemsform" element={<EditReturnLineItemsForm/>}/>
+					<Route path="/displayreturnorderform" element={<DisplayReturnOrderForm/>}/>
+					<Route path="/editreturnorderform" element={<EditReturnOrderForm/>}/>
 					
 				
 				

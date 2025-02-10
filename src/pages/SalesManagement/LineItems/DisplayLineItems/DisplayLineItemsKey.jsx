@@ -16,6 +16,14 @@ export default function DisplayLineItemsKey() {
           name="order_line_item_id"
           required=""
         />
+
+<label htmlFor="product-id">Product ID (Primary Key)</label>
+        <input
+          type="text"
+          id="product-id"
+          name="product_id"
+          required=""
+        />
       </form>
       
       

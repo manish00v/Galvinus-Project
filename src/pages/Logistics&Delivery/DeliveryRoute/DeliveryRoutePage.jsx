@@ -12,7 +12,7 @@ const DeliveryRoutePage = () => {
 		setEditBtn("Edit Delivery Route");
 		setDisplayBtn("Display Delivery Route");
 		setCreateUrl("/createdeliveryroute");
-		setEditUrl("/editdeliverroute");
+		setEditUrl("/editdeliveryroute");
 		setDisplayUrl("/displaydeliveryroute");
 	}, []);
 

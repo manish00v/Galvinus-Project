@@ -8,10 +8,13 @@ export default function CreateSalesOrderForm() {
   return (
     <>
       <main className={Box.content}>
-      <h2> Create Sales Order</h2>
+        {/* New Heading Box with Gray Background */}
+        <div className={Box.headingBox}>
+          <h2>Create Sales Order</h2>
+        </div>
+
         <div className={Box.formContainer}>
           {/* Header Box */}
-          
           <div className={Box.box} id="box1">
             <h2>Header</h2>
             <form action="/submit-form" method="POST">
@@ -68,8 +71,6 @@ export default function CreateSalesOrderForm() {
             </form>
           </div>
         </div>
-
-      
       </main>
     </>
   );

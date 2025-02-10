@@ -1,0 +1,33 @@
+import React from 'react'
+import Key from"../../../Key.module.css"
+
+export default function DisplayPaymentKey() {
+  return (
+    <main className={Key.content}>
+  <div className={Key.formContainer}>
+    <div className={Key.box} id="box1">
+      <h2>Display Payment - Mandatory Details</h2>
+      <form action="/submit-form" method="POST">
+
+      <label htmlFor="payment-ID">Payment ID (Primary Key)</label>
+              <input type="number"
+                id="payment-id"
+                name="payment_id"
+                required=""
+              />
+     
+        <label htmlFor="invoice-id">Invoice ID </label>
+        <input
+          type="text"
+          id="invoice-id"
+          name="invoice_id"
+          required=""
+        />
+ 
+      </form>
+    </div>
+  </div>
+</main>
+
+  )
+}
